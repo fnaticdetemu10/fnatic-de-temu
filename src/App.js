@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Memberships from './pages/Memberships';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
+import Hero from './pages/Hero';
 
 // Componente principal
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <Navigation />
       <main>
+        <Hero />
         <Home />
         <Memberships />
         <Events />
