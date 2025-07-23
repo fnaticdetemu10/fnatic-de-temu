@@ -27,7 +27,7 @@ function App() {
       <section id="membresias">
         <h2>Membresías</h2>
         <p>Elige tu plan de suscripción y disfruta de acceso exclusivo a torneos, contenido premium, y más.</p>
-        <button>Suscribirse</button>
+        <button>Suscríbete aquí</button>
       </section>
 
       <section id="eventos">
