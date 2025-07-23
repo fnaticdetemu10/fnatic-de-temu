@@ -1,19 +1,34 @@
 .header {
-  background: linear-gradient(135deg, #ff6600, #ff9500);
+  background: #ff6600;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.social-icons a {
   color: white;
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.header h1 {
-  margin: 0 0 0.5rem 0;
-  font-size: 2.5rem;
-  font-weight: bold;
+.social-icons a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
-.header p {
-  margin: 0;
-  font-size: 1.2rem;
-  opacity: 0.9;
+.social-icons svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
 }
