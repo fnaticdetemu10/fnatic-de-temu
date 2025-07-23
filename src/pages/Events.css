@@ -1,0 +1,19 @@
+.events-section {
+  padding: 3rem 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.events-section h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.events-section p {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
