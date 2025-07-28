@@ -61,11 +61,69 @@
   border-bottom: none;
 }
 
-@media (max-width: 600px) {
-  .teams-section h2 {
-    font-size: 2rem;
+@media (max-width: 768px) {
+  .teams-section {
+    padding: 3rem 1rem;
   }
+  
+  .teams-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .teams-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .team-card {
+    padding: 1.25rem;
+  }
+  
+  .team-name {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .teams-section {
+    padding: 2rem 0.75rem;
+  }
+  
+  .teams-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .teams-container {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  
+  .team-card {
+    padding: 1rem;
+    margin: 0 0.25rem;
+  }
+  
   .team-name {
     font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .team-member {
+    padding: 0.75rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .player-name {
+    font-size: 0.95rem;
+  }
+  
+  .player-role {
+    font-size: 0.85rem;
+    margin-left: 0;
   }
 }

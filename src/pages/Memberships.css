@@ -36,11 +36,51 @@
   background: #ff9100;
 }
 
-@media (max-width: 600px) {
-  .memberships-section h2 {
-    font-size: 2rem;
+@media (max-width: 768px) {
+  .memberships-section {
+    padding: 3rem 1rem;
   }
+  
+  .memberships-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.25rem;
+  }
+  
   .memberships-section p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
+    margin-bottom: 1.75rem;
+    max-width: 600px;
+  }
+  
+  .subscribe-btn {
+    padding: 0.875rem 2.25rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .memberships-section {
+    padding: 2rem 0.75rem;
+  }
+  
+  .memberships-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .memberships-section p {
+    font-size: 0.95rem;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    line-height: 1.6;
+  }
+  
+  .subscribe-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 1rem;
+    font-size: 0.95rem;
   }
 }

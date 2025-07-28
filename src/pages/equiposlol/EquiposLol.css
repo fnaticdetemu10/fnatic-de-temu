@@ -122,3 +122,155 @@
   text-transform: capitalize;
   opacity: 1;
 }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .roster-grid {
+    gap: 2rem;
+    max-width: 1000px;
+  }
+  
+  .roster-card {
+    width: 180px;
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 992px) {
+  .equipos-lol-hero {
+    padding: 4rem 1rem;
+  }
+  
+  .equipos-lol-title {
+    font-size: 2.2rem;
+  }
+  
+  .equipos-lol-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .roster-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 800px;
+  }
+  
+  .roster-card {
+    width: 200px;
+    min-height: 300px;
+  }
+  
+  .series-logo img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .equipos-lol-hero {
+    padding: 3rem 1rem;
+  }
+  
+  .equipos-lol-title {
+    font-size: 1.9rem;
+  }
+  
+  .equipos-lol-subtitle {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+  
+  .equipos-lol-content {
+    padding: 1.5rem 0.75rem 3rem;
+  }
+  
+  .roster-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    max-width: 500px;
+  }
+  
+  .roster-card {
+    width: 180px;
+    min-height: 280px;
+  }
+  
+  .roster-photo {
+    height: 200px;
+  }
+  
+  .player-name {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .player-role {
+    font-size: 1rem;
+  }
+  
+  .series-logo img {
+    width: 70px;
+  }
+  
+  .breadcrumbs {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .equipos-lol-hero {
+    padding: 2rem 0.75rem;
+  }
+  
+  .equipos-lol-title {
+    font-size: 1.6rem;
+  }
+  
+  .equipos-lol-subtitle {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+  
+  .equipos-lol-content {
+    padding: 1rem 0.5rem 2rem;
+  }
+  
+  .roster-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 220px;
+  }
+  
+  .roster-card {
+    width: 200px;
+    min-height: 260px;
+    margin: 0 auto;
+  }
+  
+  .roster-photo {
+    height: 180px;
+  }
+  
+  .player-name {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+  }
+  
+  .player-role {
+    font-size: 0.9rem;
+  }
+  
+  .series-logo {
+    margin-bottom: 1.5rem;
+  }
+  
+  .series-logo img {
+    width: 60px;
+  }
+  
+  .breadcrumbs {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}

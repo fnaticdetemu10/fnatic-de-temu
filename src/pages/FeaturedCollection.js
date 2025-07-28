@@ -10,11 +10,9 @@ import product3 from '../assets/images/featured3.jpg';
 /**
  * FeaturedCollection
  *
- * This component renders a “featured collection” section similar to the one
- * found on the Movistar KOI website【838726961147687†L120-L126】. It displays a
+ * This component renders a “featured collection” It displays a
  * headline, a short description encouraging visitors to discover the club’s
- * official merchandise and a grid of product images. Feel free to add
- * additional items by importing more images and extending the array.
+ * official merchandise and a grid of product images.
  */
 const FeaturedCollection = () => {
   // Array of product images. Each item could also include a link to a shop.

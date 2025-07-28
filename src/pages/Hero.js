@@ -27,6 +27,10 @@ const Hero = () => {
             Competimos con pasión y respeto. 💥#Esports #FNT
           </span>
         </div>
+        <div className="hero-buttons">
+          <a href="#teams" className="hero-btn primary">Ver Equipos</a>
+          <a href="#membership" className="hero-btn secondary">Únete</a>
+        </div>
       </div>
     </div>
   );

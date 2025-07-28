@@ -4,6 +4,7 @@ import './styles/App.css';
 // Import core layout components
 import Header from './components/Header';
 import Navigation from './components/Navigation';
+import BackToTop from './components/BackToTop';
 
 // React Router for handling multiple pages
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -36,6 +37,7 @@ function App() {
             <Route path="/pages/equiposlol/FNT1" element={<FNT1 />} />
           </Routes>
         </main>
+        <BackToTop />
       </div>
     </Router>
   );
