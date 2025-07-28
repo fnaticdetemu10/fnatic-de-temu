@@ -1,9 +1,10 @@
+/* Styles for the main header bar */
+
 .fnatic-header {
   width: 100%;
   background: linear-gradient(90deg, #111 0%, #ff6600 50%, #ff9100 100%);
-  /* Puedes jugar con el porcentaje para que se vea más negro o más naranja */
   padding: 0;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.18);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.18);
 }
 
 .fnatic-header-content {
@@ -16,14 +17,14 @@
   justify-content: space-between;
 }
 
-/* Logo a la izquierda */
+/* Logo */
 .fnatic-logo img {
   width: 54px;
   height: 54px;
   filter: drop-shadow(0 0 5px #ff9100);
 }
 
-/* Menú a la derecha */
+/* Main nav links */
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -34,9 +35,9 @@
 
 .main-nav a {
   color: #fff;
-  font-size: 17px;
+  font-size: 0.95rem;
   font-family: 'Montserrat', Arial, sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
   text-decoration: none;
   transition: border-bottom 0.17s, color 0.13s;
   border-bottom: 2px solid transparent;
@@ -44,13 +45,12 @@
   font-weight: 600;
 }
 
-.main-nav a.active,
 .main-nav a:hover {
   border-bottom: 2px solid #ff6600;
   color: #ff9100;
 }
 
-/* Íconos sociales */
+/* Social icons */
 .social-icons {
   display: flex;
   gap: 24px;
@@ -78,12 +78,25 @@
 }
 
 @media (max-width: 900px) {
-  .fnatic-header-content { width: 98%; }
-  .main-nav ul { gap: 16px; }
+  .fnatic-header-content {
+    width: 98%;
+  }
+  .main-nav ul {
+    gap: 16px;
+  }
 }
 
 @media (max-width: 700px) {
-  .fnatic-header-content { flex-direction: column; height: auto; padding: 10px 0; }
-  .main-nav ul { flex-direction: column; gap: 12px; }
-  .fnatic-logo { margin-bottom: 12px; }
+  .fnatic-header-content {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .fnatic-logo {
+    margin-bottom: 12px;
+  }
 }

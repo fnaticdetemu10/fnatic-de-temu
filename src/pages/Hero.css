@@ -1,88 +1,93 @@
+/* Styles for the Hero component */
+
 .hero {
-    background: linear-gradient(to bottom, #e0ac7b 0%, #ffffff 100%);
-    min-height: 75vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 5% 5% 0 5%;
-    position: relative;
-    overflow: hidden;
+  background: linear-gradient(to bottom, #e0ac7b 0%, #ffffff 100%);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 5% 0 5%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
 }
 
 .background-gif {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero-content {
-    max-width: 1440px;
-    position: relative;
-    z-index: 2;
+  max-width: 1000px;
+  position: relative;
+  z-index: 2;
+  color: #111;
 }
 
 .hero-title {
-    font-size: clamp(28rem, 8vw, 6rem);
-    font-weight: 900;
-    line-height: 0.85;
-    margin: 0;
-    color: #000;
-    font-family: 'Arial Black', Arial, sans-serif;
-    letter-spacing: -0.02em;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  margin: 0;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
-.hero-year {
-    color: #000;
+.hero-subtitle {
+  font-size: clamp(1rem, 3vw, 2rem);
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #333;
 }
 
 .hero-hashtags {
-    margin-top:  4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .hashtag {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #666;
-    font-family: Arial, sans-serif;
-    letter-spacing: 0.05em;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 0.05em;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
-    .hero {
-        padding: 5% 4% 0 4%;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    .hero-title {
-        font-size: clamp(2.5rem, 12vw, 4rem);
-    }
-    
-    .hero-hashtags {
-        margin-top: 0.5rem;
-    }
+  .hero {
+    padding: 5% 4% 0 4%;
+  }
+  .hero-title {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+  .hero-subtitle {
+    font-size: clamp(0.9rem, 4vw, 1.5rem);
+  }
+  .hero-hashtags {
+    margin-top: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .hero {
-        padding: 4% 3% 0 3%;
-    }
-    
-    .hero-title {
-        font-size: clamp(2rem, 15vw, 3rem);
-        line-height: 0.9;
-    }
-    
-    .hashtag {
-        font-size: 0.9rem;
-    }
+  .hero {
+    padding: 4% 3% 0 3%;
+  }
+  .hero-title {
+    font-size: clamp(2rem, 12vw, 3rem);
+    line-height: 1;
+  }
+  .hero-subtitle {
+    font-size: clamp(0.8rem, 4vw, 1.2rem);
+  }
+  .hashtag {
+    font-size: 0.9rem;
+  }
 }

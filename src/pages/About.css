@@ -1,0 +1,37 @@
+/* Styles for the About component */
+
+.about-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.about-section h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.about-section h3 {
+  color: #f89f36;
+  margin-top: 1.6rem;
+}
+
+.about-content p {
+  line-height: 1.7;
+  margin: 0.7rem 0;
+}
+
+.about-values {
+  margin: 1.2rem 0 1.5rem 1.2rem;
+  padding-left: 1rem;
+}
+
+.about-values li {
+  font-size: 1.08rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}

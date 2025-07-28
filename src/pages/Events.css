@@ -1,19 +1,31 @@
+/* Styles for the Events component */
+
 .events-section {
-  padding: 3rem 2rem;
-  background-color: #f8f9fa;
+  padding: 4rem 1rem;
+  background: #fafafa;
+  color: #111;
   text-align: center;
 }
 
 .events-section h2 {
-  color: #333;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-weight: 800;
 }
 
 .events-section p {
-  color: #666;
-  font-size: 1.1rem;
-  max-width: 600px;
+  font-size: 1.2rem;
+  max-width: 700px;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 1.5;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .events-section h2 {
+    font-size: 2rem;
+  }
+  .events-section p {
+    font-size: 1rem;
+  }
 }

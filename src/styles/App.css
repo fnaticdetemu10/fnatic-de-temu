@@ -7,21 +7,20 @@ main {
   min-height: 100vh;
 }
 
-/* Estilos generales para secciones */
+/* General section styling */
 section {
   padding: 3rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Responsive design */
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 @media (max-width: 768px) {
   section {
     padding: 2rem 1rem;
   }
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
 }

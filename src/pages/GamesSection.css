@@ -1,0 +1,54 @@
+/* Styles for the GamesSection component */
+
+.games-section {
+  padding: 4rem 1rem;
+  background: #fff;
+  color: #111;
+  text-align: center;
+}
+
+.games-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.game-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.game-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.game-card:hover img {
+  transform: scale(1.1);
+}
+
+.game-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .games-section h2 {
+    font-size: 2rem;
+  }
+}

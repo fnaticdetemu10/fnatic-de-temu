@@ -1,39 +1,44 @@
+/* Styles for the secondary navigation bar */
+
 .navigation {
-  background-color: #1a1a1a;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navigation ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.navigation li {
+  gap: 1.5rem;
   margin: 0;
+  padding: 0.75rem 2rem;
+  justify-content: center;
 }
 
 .navigation a {
-  color: white;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-weight: 500;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.25rem;
 }
 
 .navigation a:hover {
-  background-color: #ff6600;
-  color: white;
+  color: #ff9100;
+  border-bottom: 2px solid #ff6600;
 }
 
 @media (max-width: 768px) {
   .navigation ul {
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  .navigation a {
+    font-size: 0.85rem;
   }
 }
