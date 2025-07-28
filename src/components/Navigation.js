@@ -60,6 +60,16 @@ const Navigation = () => {
       </button>
       
       <ul className={`nav-menu ${isMenuOpen ? 'nav-menu-open' : ''}`}>
+        {/* Botón de cerrar solo en móviles */}
+        <li className="close-button-container">
+          <button 
+            className="close-menu-button"
+            onClick={closeMenu}
+            aria-label="Cerrar menú"
+          >
+            <span>×</span>
+          </button>
+        </li>
         <li><a href="#inicio" onClick={(e) => handleNavClick('inicio', e)}>Inicio</a></li>
         <li><a href="#about" onClick={(e) => handleNavClick('about', e)}>Quiénes somos</a></li>
         <li><a href="#featured" onClick={(e) => handleNavClick('featured', e)}>Colección</a></li>
