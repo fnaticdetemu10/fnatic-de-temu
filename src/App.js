@@ -5,16 +5,13 @@ import './styles/App.css';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 
-// Import page sections
-import Hero from './pages/Hero';
-import About from './pages/About';
-import FeaturedCollection from './pages/FeaturedCollection';
-import GamesSection from './pages/GamesSection';
-import MembershipCall from './pages/MembershipCall';
-import Teams from './pages/Teams';
-import Memberships from './pages/Memberships';
-import Events from './pages/Events';
-import Contact from './pages/Contact';
+// React Router for handling multiple pages
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Import pages for routing
+import MainPage from './pages/MainPage';
+import FNT from './pages/equiposlol/FNT';
+import FNT1 from './pages/equiposlol/FNT1';
 
 /**
  * App
@@ -26,30 +23,21 @@ import Contact from './pages/Contact';
  */
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Navigation />
-      <main>
-        {/* Hero banner with large headline */}
-        <Hero />
-        {/* About / Who we are */}
-        <About />
-        {/* Featured collection of merchandise */}
-        <FeaturedCollection />
-        {/* Games where the club competes */}
-        <GamesSection />
-        {/* Membership call to action */}
-        <MembershipCall />
-        {/* Teams roster */}
-        <Teams />
-        {/* Existing membership plans section */}
-        <Memberships />
-        {/* Upcoming events */}
-        <Events />
-        {/* Contact form */}
-        <Contact />
-      </main>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Navigation />
+        <main>
+          <Routes>
+            {/* Ruta principal que muestra todas las secciones en una sola página */}
+            <Route path="/" element={<MainPage />} />
+            {/* Páginas de equipos de League of Legends */}
+            <Route path="/pages/equiposlol/FNT" element={<FNT />} />
+            <Route path="/pages/equiposlol/FNT1" element={<FNT1 />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 

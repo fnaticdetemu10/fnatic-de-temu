@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './GamesSection.css';
 
 // TODO: add your own game logos in `src/assets/images` and update these imports.
@@ -20,26 +21,46 @@ import rocketLogo from '../assets/images/rocket_logo.png';
 const GamesSection = () => {
   // Each entry has a logo and a display name. Feel free to add more games as needed.
   const games = [
-    { name: 'League of Legends', logo: lolLogo },
-    { name: 'Valorant', logo: valorantLogo },
-    { name: 'Pokémon', logo: pokemonLogo },
-    { name: 'Free Fire', logo: freefireLogo },
-    { name: 'Warzone', logo: warzoneLogo },
-    { name: 'Honor of Kings', logo: honorLogo },
-    { name: 'Apex Legends', logo: apexLogo },
-    { name: 'Rocket League', logo: rocketLogo },
+    {
+      name: 'League of Legends – FNT',
+      logo: lolLogo,
+      link: '/pages/equiposlol/FNT',
+    },
+    {
+      name: 'League of Legends – Academia',
+      logo: lolLogo,
+      link: '/pages/equiposlol/FNT1',
+    },
+    { name: 'Valorant', logo: valorantLogo, link: null },
+    { name: 'Pokémon', logo: pokemonLogo, link: null },
+    { name: 'Free Fire', logo: freefireLogo, link: null },
+    { name: 'Warzone', logo: warzoneLogo, link: null },
+    { name: 'Honor of Kings', logo: honorLogo, link: null },
+    { name: 'Apex Legends', logo: apexLogo, link: null },
+    { name: 'Rocket League', logo: rocketLogo, link: null },
   ];
 
   return (
     <section id="games" className="games-section">
       <h2>Juegos</h2>
       <div className="games-grid">
-        {games.map((game, index) => (
-          <div className="game-card" key={index}>
-            <img src={game.logo} alt={`Logo de ${game.name}`} />
-            <span className="game-name">{game.name}</span>
-          </div>
-        ))}
+        {games.map((game, index) => {
+          const content = (
+            <>
+              <img src={game.logo} alt={`Logo de ${game.name}`} />
+              <span className="game-name">{game.name}</span>
+            </>
+          );
+          return game.link ? (
+            <Link to={game.link} className="game-card" key={index}>
+              {content}
+            </Link>
+          ) : (
+            <div className="game-card" key={index}>
+              {content}
+            </div>
+          );
+        })}
       </div>
     </section>
   );

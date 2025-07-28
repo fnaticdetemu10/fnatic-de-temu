@@ -1,9 +1,11 @@
 /* Styles for the GamesSection component */
 
+/* La sección de juegos utiliza la paleta naranja/negra de Fnatic de Temu y se inspira
+ * en el diseño de tarjetas de Movistar KOI. */
 .games-section {
   padding: 4rem 1rem;
-  background: #fff;
-  color: #111;
+  background: linear-gradient(180deg, #1c0e0a 0%, #3f2006 50%, #1c0e0a 100%);
+  color: #fff;
   text-align: center;
 }
 
@@ -13,38 +15,57 @@
   font-weight: 800;
 }
 
+/* Disposición en cuadrícula para tarjetas más grandes */
 .games-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
-  align-items: center;
-  justify-items: center;
 }
 
+/* Tarjeta individual con degradado naranja y efecto de elevación */
 .game-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff7d1f, #c54b16);
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
 }
 
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Las imágenes se invierten para que aparezcan blancas sobre el fondo naranja */
 .game-card img {
   width: 80px;
   height: 80px;
   object-fit: contain;
+  filter: brightness(0) invert(1);
+  margin-bottom: 0.5rem;
   transition: transform 0.2s ease;
 }
 
+/* Efecto de zoom del logo al pasar el ratón */
 .game-card:hover img {
   transform: scale(1.1);
 }
 
+/* Estilo del nombre del juego */
 .game-name {
   font-size: 1rem;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 @media (max-width: 600px) {

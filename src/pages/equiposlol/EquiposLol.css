@@ -1,0 +1,124 @@
+/*
+ * Estilos compartidos para las páginas de League of Legends de Fnatic de Temu (FNT y FNT1).
+ * Inspirados en la estructura de Movistar KOI pero adaptados a la paleta naranja/negra.
+ */
+
+.equipos-lol-page {
+  color: #fff;
+  background: #0d0c0c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero con degradado naranja oscuro */
+.equipos-lol-hero {
+  background: linear-gradient(180deg, #1c0e0a 0%, #c54b16 100%);
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+.equipos-lol-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.equipos-lol-subtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.equipos-lol-content {
+  flex: 1;
+  padding: 2rem 1rem 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+  color: #ffb084;
+}
+
+.breadcrumbs a {
+  color: #ffb084;
+  text-decoration: none;
+}
+
+.breadcrumbs span {
+  color: #ffb084;
+  margin-left: 0.25rem;
+}
+
+/* Logo de la serie/competición centrado encima del roster */
+.series-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.series-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.roster-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;                /* o el valor que prefieras */
+  justify-content: center;
+  margin: 0 auto 2rem auto;
+  max-width: 1200px;        /* Este valor es clave para que ambas grids tengan el MISMO ancho */
+  width: 100%;
+}
+
+
+
+.roster-card {
+  background: linear-gradient(135deg, #ff7d1f, #c54b16);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+  width: 210px;     /* O 220px, o el valor que prefieras */
+  min-height: 340px;
+  /* ...resto de estilos... */
+}
+
+.roster-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Placeholder para la foto del jugador */
+.roster-photo {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px 16px 0 0;
+  background-color: #1c0e0a;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
+/* Nombres en mayúsculas y en negrita, roles en mayúsculas */
+.player-name {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.player-role {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  opacity: 1;
+}
