@@ -1,5 +1,7 @@
 import React from 'react';
 import './EquiposLol.css';
+import Header from '../../components/Header';
+import Navigation from '../../components/Navigation';
 import hextechSeriesLogo from '../../assets/images/hextech_series.png';
 
 // Importa aquí las imágenes de tus jugadores

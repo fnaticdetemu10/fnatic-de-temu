@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Header.css';
 import FnaticLogo from '../assets/images/FNATIC DE TEMU.jpg';
 
@@ -12,25 +13,26 @@ import FnaticLogo from '../assets/images/FNATIC DE TEMU.jpg';
  * your own social profiles.
  */
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = (event) => {
+    event.preventDefault();
+    navigate('/');
+    // Scroll al top después de navegar
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+  };
   return (
     <header className="fnatic-header">
       <div className="fnatic-header-content">
         {/* Club logo */}
         <div className="fnatic-logo">
-          <a href="#inicio">
+          <a href="/" onClick={handleLogoClick}>
             <img src={FnaticLogo} alt="Logo Fnatic de Temu" />
           </a>
         </div>
-        {/* Main nav links */}
-        <nav className="main-nav">
-          <ul>
-            <li><a href="#inicio">INICIO</a></li>
-            <li><a href="#teams">EQUIPOS</a></li>
-            <li><a href="#membership">SOCIOS</a></li>
-            <li><a href="#about">QUIÉNES SOMOS</a></li>
-            <li><a href="#featured">TIENDA</a></li>
-          </ul>
-        </nav>
+        
         {/* Social icons */}
         <div className="social-icons">
           {/* Twitter */}

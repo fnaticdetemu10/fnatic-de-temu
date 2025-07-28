@@ -1,9 +1,9 @@
 /* Styles for the About component */
 
 .about-section {
-  max-width: 700px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem 15rem;
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.05);
@@ -13,6 +13,11 @@
   text-align: center;
   font-size: 2.4rem;
   margin-bottom: 1rem;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .about-section h3 {
@@ -28,6 +33,7 @@
 .about-values {
   margin: 1.2rem 0 1.5rem 1.2rem;
   padding-left: 1rem;
+  max-width: 750px;
 }
 
 .about-values li {
@@ -41,6 +47,10 @@
     margin: 0 0.5rem;
     padding: 1.5rem;
     border-radius: 12px;
+  }
+  
+  .about-content {
+    max-width: 100%;
   }
   
   .about-section h2 {
@@ -62,6 +72,7 @@
   .about-values {
     margin: 1rem 0 1.25rem 0.75rem;
     padding-left: 0.75rem;
+    max-width: 100%;
   }
   
   .about-values li {
@@ -76,6 +87,10 @@
     margin: 0 0.25rem;
     padding: 1.25rem;
     border-radius: 8px;
+  }
+  
+  .about-content {
+    max-width: 100%;
   }
   
   .about-section h2 {
@@ -97,6 +112,7 @@
   .about-values {
     margin: 0.75rem 0 1rem 0.5rem;
     padding-left: 0.5rem;
+    max-width: 100%;
   }
   
   .about-values li {
