@@ -62,7 +62,7 @@
 
 @media (max-width: 768px) {
   .navigation {
-    text-align: center;
+    text-align: right;
   }
   
   /* Ocultar el menú normal en móviles */
@@ -100,10 +100,6 @@
     gap: 0;
     z-index: 100;
     box-shadow: 2px 0 10px rgba(0,0,0,0.3);
-  }
-  
-  .nav-menu li {
-    margin: 0.75rem 0;
   }
   
   .nav-menu a {
