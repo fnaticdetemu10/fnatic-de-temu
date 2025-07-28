@@ -72,6 +72,9 @@
     padding: 0;
     box-shadow: none;
     position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   /* Ocultar el menú normal en móviles */
@@ -172,6 +175,9 @@
     margin: 0;
     padding: 0;
     box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .mobile-menu-toggle {
