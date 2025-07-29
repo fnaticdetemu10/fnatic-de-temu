@@ -1,6 +1,6 @@
 import './Hero.css';
 import React from 'react';
-import petalosCayendo from '../assets/images/petalos-cerezo-cayendo.gif';
+import petalosCayendo from '../../../../assets/images/general/petalos-cerezo-cayendo.gif';
 
 /**
  * Hero

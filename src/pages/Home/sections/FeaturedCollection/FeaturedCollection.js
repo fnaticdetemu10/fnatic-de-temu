@@ -3,9 +3,9 @@ import './FeaturedCollection.css';
 
 // TODO: replace these imports with your own product images.
 // Place three or more images inside `src/assets/images` and update the paths accordingly.
-import product1 from '../assets/images/featured1.jpg';
-import product2 from '../assets/images/featured2.jpg';
-import product3 from '../assets/images/featured3.jpg';
+import product1 from '../../../../assets/images/general/featured1.jpg';
+import product2 from '../../../../assets/images/general/featured2.jpg';
+import product3 from '../../../../assets/images/general/featured3.jpg';
 
 /**
  * FeaturedCollection

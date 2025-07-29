@@ -1,32 +1,32 @@
 import React from 'react';
-import './EquiposLol.css';
-import hextechSeriesLogo from '../../assets/images/hextech_series.png';
+import '../EquiposLol.css';
+import hextechSeriesLogo from '../../../../assets/images/general/hextech_series.png';
 
 // Importa aquí las imágenes de tus jugadores
-import supportPlayer from '../../assets/images/support_player.png';    // <-- cámbialo por el nombre real si quieres
+import midPlayer from '../../../../assets/images/teams/mid_player.png';    // <-- cámbialo por el nombre real si quieres
 
-const FNT = () => {
+const FNT1 = () => {
   const roster = [
-    { name: 'HideOnMäta69 #EUW', role: 'Top' }, // Ejemplo con foto
-    { name: 'FNT Drakesin #FNT', role: 'Jungla' },
-    { name: 'Liss The Iceborn #LISS', role: 'Mid' },
-    { name: 'FNT Uma Jam #TEMU', role: 'Adc' },
-    { name: '¿?', role: 'Support', photo: supportPlayer }, // Ejemplo con foto},
+    { name: 'MarcMef #EUW', role: 'Top' },
+    { name: 'KÉR Chete #6472', role: 'Jungla' },
+    { name: '?¿', role: 'Mid', photo: midPlayer }, // Ejemplo con foto
+    { name: 'Azpy #1337', role: 'Adc' },
+    { name: 'melon pan #7027', role: 'Support' },
   ];
   return (
     <div className="equipos-lol-page">
       <header className="equipos-lol-hero">
         <div className="container">
-          <h1 className="equipos-lol-title">League of Legends – FNT</h1>
+          <h1 className="equipos-lol-title">League of Legends – FNT T1</h1>
           <p className="equipos-lol-subtitle">
-            Nuestro equipo principal compite en la 3ª Div. HEXTECH SERIES, combinando pasión,
-            disciplina y un deseo constante de superación. League of Legends es más que un juego para nosotros; es una forma de vida.
+            Nuestro equipo academia cultiva el talento emergente y prepara a
+            los futuros campeones de Fnatic de Temu.
           </p>
         </div>
       </header>
       <main className="equipos-lol-content">
         <div className="breadcrumbs">
-          <a href="/">Inicio</a> / <span>Equipos LOL</span> / <span>FNT</span>
+          <a href="/">Inicio</a> / <span>Equipos LOL</span> / <span>FNT T1</span>
         </div>
         {/* Logo de la competición */}
         <div className="series-logo">
@@ -40,7 +40,7 @@ const FNT = () => {
                 style={{
                   backgroundImage: player.photo ? `url(${player.photo})` : "none"
                 }}
-              />
+              ></div>
               <h3 className="player-name">{player.name.toUpperCase()}</h3>
               <p className="player-role">{player.role}</p>
             </div>
@@ -51,4 +51,4 @@ const FNT = () => {
   );
 };
 
-export default FNT;
+export default FNT1;

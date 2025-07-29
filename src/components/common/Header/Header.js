@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Header.css';
-import FnaticLogo from '../assets/images/FNATIC DE TEMU.jpg';
+import FnaticLogo from '../../../assets/images/logos/FNATIC DE TEMU.jpg';
 
 /**
  * Header

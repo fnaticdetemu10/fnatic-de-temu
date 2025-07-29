@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import './GamesSection.css';
 
 // TODO: add your own game logos in `src/assets/images` and update these imports.
-import lolLogo from '../assets/images/League of Legends logo.png';
-import valorantLogo from '../assets/images/valorant_logo.png';
-import pokemonLogo from '../assets/images/pokemon_logo.png';
-import freefireLogo from '../assets/images/freefire_logo.png';
-import warzoneLogo from '../assets/images/warzone_logo.png';
-import honorLogo from '../assets/images/honor_logo.png';
-import apexLogo from '../assets/images/apex_logo.png';
-import rocketLogo from '../assets/images/rocket_logo.png';
+import lolLogo from '../../../../assets/images/games/League of Legends logo.png';
+import valorantLogo from '../../../../assets/images/games/valorant_logo.png';
+import pokemonLogo from '../../../../assets/images/games/pokemon_logo.png';
+import freefireLogo from '../../../../assets/images/games/freefire_logo.png';
+import warzoneLogo from '../../../../assets/images/games/warzone_logo.png';
+import honorLogo from '../../../../assets/images/games/honor_logo.png';
+import apexLogo from '../../../../assets/images/games/apex_logo.png';
+import rocketLogo from '../../../../assets/images/games/rocket_logo.png';
 
 /**
  * GamesSection
