@@ -24,12 +24,12 @@ const GamesSection = () => {
     {
       name: 'League of Legends – FNT',
       logo: lolLogo,
-      link: '/pages/equiposlol/FNT',
+      link: '/teams/fnt',
     },
     {
       name: 'League of Legends – Academia',
       logo: lolLogo,
-      link: '/pages/equiposlol/FNT1',
+      link: '/teams/fnt1',
     },
     { name: 'Valorant', logo: valorantLogo, link: null },
     { name: 'Pokémon', logo: pokemonLogo, link: null },
