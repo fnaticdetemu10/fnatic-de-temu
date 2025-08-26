@@ -103,6 +103,23 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
+    // Security: Rate limiting check
+    const now = Date.now();
+    const timeSinceLastSubmission = now - lastSubmissionTime.current;
+    
+    if (timeSinceLastSubmission < RATE_LIMIT_DELAY) {
+      const remainingTime = Math.ceil((RATE_LIMIT_DELAY - timeSinceLastSubmission) / 1000);
+      setErrors({ general: `Por favor espera ${remainingTime} segundos antes de enviar otro mensaje` });
+      return;
+    }
+    
+    // Security: Check hourly limit
+    const oneHourAgo = now - (60 * 60 * 1000);
+    if (submissionCount.current >= MAX_HOURLY_SUBMISSIONS && lastSubmissionTime.current > oneHourAgo) {
+      setErrors({ general: 'Has alcanzado el límite de mensajes por hora. Inténtalo más tarde.' });
+      return;
+    }
+    
     // Validate form
     const formErrors = validateForm();
     if (Object.keys(formErrors).length > 0) {
@@ -112,14 +129,24 @@ const Contact = () => {
     
     setIsSubmitting(true);
     setSubmitStatus(null);
+    setErrors({});
     
     try {
+      // Security: Sanitize data before sending
+      const sanitizedData = {
+        name: formData.name.trim().substring(0, 100),
+        email: formData.email.trim().substring(0, 254),
+        message: formData.message.trim().substring(0, 1000)
+      };
+      
       // Send email using EmailJS
       const templateParams = {
-        name: formData.name,
-        email: formData.email,
-        message: formData.message,
-        to_email: 'fnatic.de.temu10@gmail.com' // Email donde quieres recibir los mensajes
+        name: sanitizedData.name,
+        email: sanitizedData.email,
+        message: sanitizedData.message,
+        to_email: 'fnatic.de.temu10@gmail.com',
+        timestamp: new Date().toLocaleString('es-ES'),
+        user_ip: 'Hidden for privacy'
       };
 
       const result = await emailjs.send(
@@ -129,9 +156,18 @@ const Contact = () => {
         EMAILJS_CONFIG.PUBLIC_KEY
       );
 
-      console.log('Email sent successfully:', result);
+      console.log('Email sent successfully:', result.status);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
+      
+      // Security: Update rate limiting counters
+      lastSubmissionTime.current = now;
+      submissionCount.current += 1;
+      
+      // Reset hourly counter after one hour
+      setTimeout(() => {
+        submissionCount.current = Math.max(0, submissionCount.current - 1);
+      }, 60 * 60 * 1000);
       
     } catch (error) {
       console.error('Error sending email:', error);
@@ -196,6 +232,13 @@ const Contact = () => {
           />
           {errors.message && <span className="error-message">{errors.message}</span>}
         </div>
+
+        {/* General errors (rate limiting, spam detection, etc.) */}
+        {errors.general && (
+          <div className="general-error">
+            <span className="error-message">{errors.general}</span>
+          </div>
+        )}
 
         <button
           type="submit"
