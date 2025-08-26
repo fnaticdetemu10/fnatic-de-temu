@@ -1,0 +1,244 @@
+/* Footer Styles */
+
+.fnatic-footer {
+  background: linear-gradient(90deg, #111 0%, #ff6600 50%, #ff9100 100%);
+  color: #ffffff;
+  padding: 3rem 1rem 1.5rem 1rem;
+  margin-top: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.fnatic-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #ffffff 50%, transparent 100%);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+/* Logo section */
+.footer-logo {
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  height: 80px;
+  width: auto;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.5));
+}
+
+/* Social media icons */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.footer-social a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-social a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.footer-social a:hover::before {
+  left: 100%;
+}
+
+.footer-social a:hover {
+  transform: translateY(-3px) scale(1.1);
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.footer-social svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  position: relative;
+  z-index: 2;
+}
+
+/* Legal links */
+.footer-legal {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.footer-legal a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-legal a:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Copyright */
+.footer-copyright {
+  margin-top: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+.footer-copyright p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fnatic-footer {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  
+  .footer-content {
+    gap: 1.5rem;
+  }
+  
+  .footer-logo img {
+    height: 60px;
+  }
+  
+  .footer-social {
+    gap: 1.5rem;
+  }
+  
+  .footer-social a {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .footer-social svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .footer-legal {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-legal a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .footer-copyright {
+    padding-top: 1.5rem;
+  }
+  
+  .footer-copyright p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fnatic-footer {
+    padding: 1.5rem 0.75rem 1rem 0.75rem;
+  }
+  
+  .footer-content {
+    gap: 1.25rem;
+  }
+  
+  .footer-logo img {
+    height: 50px;
+  }
+  
+  .footer-social {
+    gap: 1rem;
+  }
+  
+  .footer-social a {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-social svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .footer-legal a {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .footer-copyright p {
+    font-size: 0.75rem;
+  }
+}
+
+/* Dark theme animation */
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.5));
+  }
+}
+
+.footer-logo img {
+  animation: glow 4s ease-in-out infinite;
+}

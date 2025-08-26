@@ -70,7 +70,7 @@ const Header = () => {
           </a>
           {/* TikTok */}
           <a
-            href="https://tiktok.com"
+            href="https://www.tiktok.com/@fnatic_temu"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="TikTok"

@@ -21,7 +21,7 @@ const Hero = () => {
       />
       <div className="hero-content">
         <h1 className="hero-title">FNATIC DE TEMU</h1>
-        <p className="hero-subtitle">Honor · Disciplina · Mejora constante 改善</p>
+        <p className="hero-subtitle">Honor · Disciplina · Mejora constante 精益求精</p>
         <div className="hero-hashtags">
           <span className="hashtag">
             Competimos con pasión y respeto. 💥#Esports #FNT

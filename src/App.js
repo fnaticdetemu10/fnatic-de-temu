@@ -4,6 +4,7 @@ import './styles/App.css';
 // Import core layout components
 import Header from './components/common/Header';
 import Navigation from './components/common/Navigation';
+import Footer from './components/common/Footer';
 import BackToTop from './components/BackToTop';
 
 // React Router for handling multiple pages
@@ -37,6 +38,7 @@ function App() {
             <Route path="/teams/fnt1" element={<FNT1 />} />
           </Routes>
         </main>
+        <Footer />
         <BackToTop />
       </div>
     </Router>
