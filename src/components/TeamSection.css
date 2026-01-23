@@ -1,0 +1,57 @@
+.teams-section {
+  background:
+    radial-gradient(800px 380px at 12% -10%, #101010 0%, #000 70%),
+    radial-gradient(600px 280px at 92% 110%, #0b0b0b 0%, #000 70%),
+    linear-gradient(180deg, rgba(255,122,26,0.08) 0%, rgba(255,122,26,0) 50%);
+  padding: 72px 20px;
+}
+
+.teams-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.team-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team-title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  position: relative;
+}
+
+.team-title::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 3px;
+  margin-top: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff7a1a, #ff8f3e);
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .players-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .players-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

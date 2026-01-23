@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# FNT TEMU v2 — Sitio web React + Vite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto web para la comunidad Fnatic de Temu, construido con React y Vite. Incluye secciones de héroe, próximo partido con contador, información del equipo, creadores, comunidad, un footer con enlaces sociales y un menú flotante para navegar entre secciones.
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- Secciones: Hero, Próximo Partido, Sobre el equipo, Plantilla, Creadores, Comunidad, Footer.
+- Menú flotante fijo arriba a la derecha con navegación por anclas.
+- Footer con enlaces sociales: X, Instagram, YouTube y TikTok.
+- Estilo consistente con gradientes oscuros, sombras y acentos naranja.
+- Configuración basada en Vite con React 19 y ESLint.
 
-### `npm start`
+## Requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js 18+ recomendado.
+- npm (o pnpm/yarn, si prefieres adaptar scripts).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Inicio rápido
 
-### `npm test`
+1. Instala dependencias:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+2. Entorno de desarrollo (HMR):
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm run dev
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Construcción para producción:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run build
+```
 
-### `npm run eject`
+4. Previsualización del build local:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm run preview
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Navegación y secciones
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+El menú flotante y los enlaces internos usan anclas de sección:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `#hero`
+- `#next-match`
+- `#about`
+- `#teams`
+- `#creators`
+- `#community`
 
-## Learn More
+Estas IDs están aplicadas en el layout principal para permitir el scroll hacia cada bloque.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Enlaces sociales
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Los enlaces sociales se muestran tanto en el footer como en el menú flotante. Puedes modificarlos en:
 
-### Code Splitting
+- `src/components/Footer.jsx`
+- `src/components/FloatingMenu.jsx`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Datos y assets
 
-### Analyzing the Bundle Size
+- Próximo partido: `public/data/matches.json` (si se usa en la sección correspondiente).
+- Logos y vídeos: `src/assets/` y `public/logos/`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Estilo
 
-### Making a Progressive Web App
+La estética del sitio se basa en gradientes oscuros, sombras y acentos naranja, en línea con componentes como `NextMatch` y `TeamSection`. Los iconos sociales usan `currentColor` y resaltan en naranja al pasar el cursor.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Scripts disponibles
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `npm run dev`: inicia el servidor de desarrollo.
+- `npm run build`: crea el bundle de producción.
+- `npm run preview`: sirve el build localmente.
+- `npm run lint`: ejecuta ESLint sobre el proyecto.

@@ -1,0 +1,66 @@
+.emphasis {
+  font-weight: 700;
+  color: #ff7a1a; /* tu naranja */
+}
+
+.community {
+  width: 100%;
+  color: #101010;
+  background:
+    linear-gradient(180deg, #fcd9b6 0%, #fff7ef 100%);
+}
+
+.community__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+.community__title {
+  font-size: clamp(1.75rem, 5vw, 2.4rem);
+  line-height: 1.2;
+  margin: 0 0 1.25rem 0;
+}
+
+.community__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.community__card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.community__cardBody {
+  padding: 1.25rem;
+}
+
+.community__cardTitle {
+  font-size: clamp(1.25rem, 3.2vw, 1.6rem);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.community__cardText {
+  font-size: clamp(1rem, 2.5vw, 1.05rem);
+  line-height: 1.7;
+  opacity: 0.9;
+  margin: 0 0 1rem 0;
+}
+
+.community__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .community__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

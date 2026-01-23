@@ -1,0 +1,65 @@
+.player-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #0d0d0d;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 14px;
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease, outline-color 200ms ease;
+}
+
+.player-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 122, 26, 0.18);
+  border-color: rgba(255,122,26,0.35);
+}
+
+.player-media {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #121212;
+}
+
+.player-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.player-photo.placeholder {
+  background: radial-gradient(120px circle at 30% 20%, #1f1f1f, #0f0f0f 60%);
+}
+
+.player-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-name {
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.player-role {
+  color: #ff7a1a;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.player-card:focus-within {
+  outline: 2px solid #ff7a1a;
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .player-card {
+    padding: 12px;
+  }
+}

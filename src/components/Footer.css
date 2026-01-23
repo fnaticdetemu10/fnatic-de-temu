@@ -1,0 +1,58 @@
+.footer {
+  background:
+    radial-gradient(800px 380px at 12% -10%, #101010 0%, #000 70%),
+    radial-gradient(600px 280px at 92% 110%, #0b0b0b 0%, #000 70%),
+    linear-gradient(180deg, rgba(255,122,26,0.08) 0%, rgba(255,122,26,0) 50%);
+  padding: 48px 20px;
+  color: #ffffff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
+  transition: transform 0.12s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.footer-icon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(255, 122, 26, 0.35), inset 0 1px 0 rgba(255,255,255,0.1);
+  color: #ff7a1a;
+}
+
+.footer-icon:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 122, 26, 0.6);
+}
+
+.footer-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+@media (max-width: 640px) {
+  .footer { padding: 36px 16px; }
+  .footer-icon { width: 40px; height: 40px; }
+  .footer-icon svg { width: 20px; height: 20px; }
+}
