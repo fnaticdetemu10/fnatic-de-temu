@@ -1,6 +1,6 @@
 .creators {
   width: 100%;
-  color: #101010;
+  color: var(--color-text-primary);
   background:
     linear-gradient(
       180deg,

@@ -19,10 +19,10 @@ export default function Hero() {
       <div className="hero__content">
         <h1 className="hero__title">FNATIC DE TEMU</h1>
         <p className="hero__subtitle">Honor · Disciplina · Mejora constante · 精益求精</p>
-        <p className="hero__tagline">Competimos con pasión y respeto. 💥#Esports #FNT</p>
+        <p className="hero__tagline">Competimos con propósito y respeto.</p>
         <div className="hero__actions">
           <a className="btn btn--primary" href="#equipos" aria-label="Ver equipos">Ver Equipos</a>
-          <a className="btn btn--secondary" href="#unete" aria-label="Únete">Únete</a>
+          <a className="btn btn--accentOutline" href="#unete" aria-label="Únete">Únete</a>
         </div>
       </div>
     </section>

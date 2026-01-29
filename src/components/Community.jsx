@@ -16,7 +16,7 @@ export default function Community() {
               <div className="community__actions">
                 <a
                   className="btn btn--primary"
-                  href="https://discord.com/invite/REEMPLAZAR_CODIGO" 
+                  href="https://discord.gg/6tJNJnC9YC" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Unirse al Discord del equipo"
@@ -35,8 +35,8 @@ export default function Community() {
               </p>
               <div className="community__actions">
                 <a
-                  className="btn btn--secondary"
-                  href="https://forms.gle/REEMPLAZAR_ENLACE" 
+                  className="btn btn--primary"
+                  href="https://forms.gle/ZpktiatxRkKhNJK86" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Abrir formulario para competir con Fnatic de Temu"

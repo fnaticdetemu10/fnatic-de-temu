@@ -41,20 +41,20 @@
 }
 
 .player-name {
-  color: #ffffff;
+  color: var(--color-text-on-dark);
   font-weight: 600;
   letter-spacing: 0.2px;
 }
 
 .player-role {
-  color: #ff7a1a;
+  color: var(--color-accent);
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.8px;
 }
 
 .player-card:focus-within {
-  outline: 2px solid #ff7a1a;
+  outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
 

@@ -1,11 +1,11 @@
 .emphasis {
   font-weight: 700;
-  color: #ff7a1a; /* tu naranja */
+  color: var(--color-accent);
 }
 
 .community {
   width: 100%;
-  color: #101010;
+  color: var(--color-text-primary);
   background:
     linear-gradient(180deg, #fcd9b6 0%, #fff7ef 100%);
 }
@@ -51,6 +51,7 @@
   line-height: 1.7;
   opacity: 0.9;
   margin: 0 0 1rem 0;
+  color: var(--color-text-secondary);
 }
 
 .community__actions {

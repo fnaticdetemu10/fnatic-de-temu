@@ -4,7 +4,7 @@
     radial-gradient(600px 280px at 92% 110%, #0b0b0b 0%, #000 70%),
     linear-gradient(180deg, rgba(255,122,26,0.08) 0%, rgba(255,122,26,0) 50%);
   padding: 48px 20px;
-  color: #ffffff;
+  color: var(--color-text-on-dark);
 }
 
 .footer-container {
@@ -28,7 +28,7 @@
   height: 44px;
   border-radius: 12px;
   background: rgba(255,255,255,0.06);
-  color: #ffffff;
+  color: var(--color-text-on-dark);
   text-decoration: none;
   box-shadow: 0 6px 16px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
   transition: transform 0.12s ease, box-shadow 0.2s ease, color 0.2s ease;
@@ -37,7 +37,7 @@
 .footer-icon:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 28px rgba(255, 122, 26, 0.35), inset 0 1px 0 rgba(255,255,255,0.1);
-  color: #ff7a1a;
+  color: var(--color-accent);
 }
 
 .footer-icon:focus-visible {

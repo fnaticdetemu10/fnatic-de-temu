@@ -68,7 +68,25 @@ Los enlaces sociales se muestran tanto en el footer como en el menú flotante. P
 
 ## Estilo
 
-La estética del sitio se basa en gradientes oscuros, sombras y acentos naranja, en línea con componentes como `NextMatch` y `TeamSection`. Los iconos sociales usan `currentColor` y resaltan en naranja al pasar el cursor.
+La estética del sitio se basa en gradientes oscuros, sombras y acentos de marca, manteniendo los fondos y degradados originales.
+
+### Colores y variables
+
+- Color principal de texto: `#111111` → `--color-text-primary`
+- Color secundario de texto: `#555555` → `--color-text-secondary`
+- Color de acento (CTAs, enlaces, estados activos): `#FF7A18` → `--color-accent`
+- Texto sobre fondo oscuro: `#FFFFFF` → `--color-text-on-dark`
+
+Reglas aplicadas:
+- No se han modificado fondos ni degradados existentes.
+- Se ha sustituido negro puro en tipografía por `#111111`.
+- Se ha unificado gris de texto a `#555555` donde aplica.
+- Enlaces, botones principales y estados `hover/focus` usan el acento `#FF7A18`.
+- El texto largo evita el uso del acento para mantener legibilidad (WCAG AA).
+
+Referencias:
+- Variables definidas en `src/index.css`.
+- Componentes actualizados para usar `var(--color-...)` en tipografía y elementos interactivos.
 
 ## Scripts disponibles
 
