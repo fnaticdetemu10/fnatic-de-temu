@@ -1,15 +1,13 @@
 /* NextMatch component styles */
 .nextMatch {
   background:
-    linear-gradient(
-      90deg,
+    linear-gradient(90deg,
       #000 10%,
       #222222 30%,
       #252525 40%,
       #222222 50%,
-      #000 100%
-    ),
-    radial-gradient(600px 260px at 85% 0%, rgba(255,255,255,0.04), transparent 60%),
+      #000 100%),
+    radial-gradient(600px 260px at 85% 0%, rgba(255, 255, 255, 0.04), transparent 60%),
     radial-gradient(500px 240px at 10% 100%, rgba(224, 4, 4, 0.03), transparent 60%);
   color: var(--color-text-on-dark);
   border-radius: 18px;
@@ -17,8 +15,44 @@
   max-width: 900px;
   margin: 0 auto;
   box-shadow:
-    0 20px 50px rgba(0,0,0,0.55),
-    inset 0 1px 0 rgba(255,255,255,0.04);
+    0 20px 50px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.nextMatch__layout--fallback {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+}
+
+.nextMatch__fallbackIcon {
+  width: 48px;
+  height: 48px;
+  color: var(--color-accent);
+  opacity: 0.8;
+}
+
+.nextMatch__fallback {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: var(--color-text-on-dark);
+  font-weight: 600;
+  margin: 0;
+}
+
+.nextMatch__link {
+  color: var(--color-accent);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-accent);
+  transition: all 0.2s ease;
+}
+
+.nextMatch__link:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-accent);
+  padding: 0 4px;
 }
 
 .nextMatch__opponent::after {
@@ -28,12 +62,10 @@
   bottom: 0;
   width: 48px;
   height: 2px;
-  background: linear-gradient(
-    90deg,
-    #FF7A18,
-    rgba(255,122,26,0.4),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      #FF7A18,
+      rgba(255, 122, 26, 0.4),
+      transparent);
 }
 
 
@@ -53,8 +85,8 @@
 }
 
 .nextMatch__opponent {
-    position: relative;
-    padding-bottom: 12px;
+  position: relative;
+  padding-bottom: 12px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -68,8 +100,8 @@
   height: 40px;
   object-fit: contain;
   border-radius: 8px;
-  background: rgba(255,255,255,0.06);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
 }
 
 .nextMatch__countdown {
@@ -89,7 +121,7 @@
   padding: 0.65rem 1.1rem;
   box-shadow:
     0 8px 22px rgba(255, 122, 26, 0.4),
-    inset 0 1px 0 rgba(255,255,255,0.35);
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
   transition: transform 0.12s ease, box-shadow 0.2s ease;
 }
 
@@ -97,13 +129,19 @@
   transform: translateY(-2px);
   box-shadow:
     0 12px 30px rgba(255, 122, 26, 0.55),
-    inset 0 1px 0 rgba(255,255,255,0.45);
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
 }
 
 
 @media (max-width: 640px) {
-  .nextMatch { padding: 20px; }
-  .nextMatch__logo { width: 32px; height: 32px; }
+  .nextMatch {
+    padding: 20px;
+  }
+
+  .nextMatch__logo {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .nextMatch__layout {
@@ -164,7 +202,7 @@
   letter-spacing: 0.08em;
   background: #e91e63;
   color: var(--color-text-on-dark);
-  box-shadow: 0 6px 16px rgba(233,30,99,0.45);
+  box-shadow: 0 6px 16px rgba(233, 30, 99, 0.45);
 }
 
 

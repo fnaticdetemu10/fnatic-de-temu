@@ -1,5 +1,6 @@
 import './Hero.css'
 import heroVideo from '../assets/videos/Hero_Video.mp4'
+import heroPoster from '../assets/videos/hero_image.png'
 
 export default function Hero() {
   return (
@@ -7,6 +8,7 @@ export default function Hero() {
       <video
         className="hero__video"
         src={heroVideo}
+        poster={heroPoster}
         autoPlay
         loop
         muted

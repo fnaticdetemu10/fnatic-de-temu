@@ -2,7 +2,7 @@ import './Footer.css'
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer id="footer" className="footer">
       <div className="footer-container">
         <div className="footer-social" aria-label="Redes sociales">
           {/* Twitter/X */}

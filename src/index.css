@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;700&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -17,6 +19,9 @@
   --color-text-secondary: #555555;
   --color-accent: #FF7A18;
   --color-text-on-dark: #FFFFFF;
+
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
 }
 
 a {
@@ -24,13 +29,15 @@ a {
   color: var(--color-accent);
   text-decoration: inherit;
 }
+
 a:hover {
   color: var(--color-accent);
 }
 
 body {
   margin: 0;
-  display: block; /* permitir que el hero ocupe toda la pantalla */
+  display: block;
+  /* permitir que el hero ocupe toda la pantalla */
   min-width: 320px;
   min-height: 100vh;
   background-color: #000;
@@ -38,8 +45,10 @@ body {
 }
 
 h1 {
+  font-family: var(--font-heading);
   font-size: 3.2em;
   line-height: 1.1;
+  text-transform: uppercase;
 }
 
 button {
@@ -53,9 +62,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: var(--color-accent);
 }
+
 button:focus,
 button:focus-visible {
   outline: 3px solid var(--color-accent);
@@ -66,9 +77,11 @@ button:focus-visible {
     color: var(--color-text-primary);
     background-color: #ffffff;
   }
+
   a:hover {
     color: var(--color-accent);
   }
+
   button {
     background-color: #f9f9f9;
   }
