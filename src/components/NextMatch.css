@@ -1,19 +1,18 @@
+#next-match {
+  padding: 60px 1.25rem;
+}
+
 /* NextMatch component styles */
 .nextMatch {
-  background:
-    linear-gradient(90deg,
-      #000 10%,
-      #222222 30%,
-      #252525 40%,
-      #222222 50%,
-      #000 100%),
-    radial-gradient(600px 260px at 85% 0%, rgba(255, 255, 255, 0.04), transparent 60%),
-    radial-gradient(500px 240px at 10% 100%, rgba(224, 4, 4, 0.03), transparent 60%);
+  background: rgba(13, 17, 23, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   color: var(--color-text-on-dark);
   border-radius: 18px;
-  padding: 26px;
+  padding: 40px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 40px auto;
   box-shadow:
     0 20px 50px rgba(0, 0, 0, 0.55),
     inset 0 1px 0 rgba(255, 255, 255, 0.04);
@@ -63,8 +62,8 @@
   width: 48px;
   height: 2px;
   background: linear-gradient(90deg,
-      #FF7A18,
-      rgba(255, 122, 26, 0.4),
+      #007BFF,
+      rgba(0, 123, 255, 0.4),
       transparent);
 }
 
@@ -82,6 +81,7 @@
   font-weight: 800;
   letter-spacing: 0.6px;
   margin: 0 0 8px 0;
+  color: var(--color-accent);
 }
 
 .nextMatch__opponent {
@@ -93,6 +93,7 @@
   font-size: 1rem;
   opacity: 0.95;
   margin: 0 0 10px 0;
+  color: #eaeaea;
 }
 
 .nextMatch__logo {
@@ -113,14 +114,14 @@
   position: relative;
   display: inline-block;
   margin-top: 10px;
-  background: linear-gradient(180deg, #FF7A18, #FF7A18);
-  color: var(--color-text-primary);
+  background: linear-gradient(180deg, #007BFF, #007BFF);
+  color: #fff;
   text-decoration: none;
   font-weight: 800;
   border-radius: 999px;
   padding: 0.65rem 1.1rem;
   box-shadow:
-    0 8px 22px rgba(255, 122, 26, 0.4),
+    0 8px 22px rgba(0, 123, 255, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.35);
   transition: transform 0.12s ease, box-shadow 0.2s ease;
 }
@@ -128,14 +129,15 @@
 .nextMatch__cta:hover {
   transform: translateY(-2px);
   box-shadow:
-    0 12px 30px rgba(255, 122, 26, 0.55),
+    0 12px 30px rgba(0, 123, 255, 0.55),
     inset 0 1px 0 rgba(255, 255, 255, 0.45);
 }
 
 
 @media (max-width: 640px) {
   .nextMatch {
-    padding: 20px;
+    padding: 24px;
+    margin: 20px auto;
   }
 
   .nextMatch__logo {

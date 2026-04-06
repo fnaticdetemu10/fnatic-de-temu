@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-social" aria-label="Redes sociales">
           {/* Twitter/X */}
           <a
-            href="https://x.com/Fnactic_de_Temu"
+            href="https://x.com/Azure_Dragons"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
@@ -20,7 +20,7 @@ export default function Footer() {
 
           {/* Instagram */}
           <a
-            href="https://instagram.com/fnaticdetemu"
+            href="https://instagram.com/azure_dragons_"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -33,7 +33,7 @@ export default function Footer() {
 
           {/* YouTube */}
           <a
-            href="https://youtube.com/@fnaticdetemu"
+            href="https://youtube.com/@azuredragons"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
@@ -46,7 +46,7 @@ export default function Footer() {
 
           {/* TikTok */}
           <a
-            href="https://www.tiktok.com/@fnatic_temu"
+            href="https://www.tiktok.com/@azure_dragons"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="TikTok"

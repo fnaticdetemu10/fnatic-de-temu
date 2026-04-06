@@ -17,7 +17,7 @@
   /* Unified color palette */
   --color-text-primary: #111111;
   --color-text-secondary: #555555;
-  --color-accent: #FF7A18;
+  --color-accent: #007BFF;
   --color-text-on-dark: #FFFFFF;
 
   --font-heading: 'Oswald', sans-serif;
@@ -40,7 +40,9 @@ body {
   /* permitir que el hero ocupe toda la pantalla */
   min-width: 320px;
   min-height: 100vh;
-  background-color: #000;
+  background: linear-gradient(180deg, #001a33 0%, #000000 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: #fff;
 }
 

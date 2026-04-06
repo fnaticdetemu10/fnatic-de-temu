@@ -1,10 +1,11 @@
 import './Hero.css'
-import heroVideo from '../assets/videos/Hero_Video.mp4'
+/*import heroVideo from '../assets/videos/Hero_Video.mp4'*/
 import heroPoster from '../assets/videos/hero_image.png'
 
 export default function Hero() {
   return (
     <section className="hero" aria-label="Sección principal">
+      {/*
       <video
         className="hero__video"
         src={heroVideo}
@@ -16,10 +17,12 @@ export default function Hero() {
         preload="auto"
         aria-hidden="true"
       />
+      */}
+      <img className="hero__image" src={heroPoster} alt="" aria-hidden="true" />
       <div className="hero__overlay" />
 
       <div className="hero__content">
-        <h1 className="hero__title">FNATIC DE TEMU</h1>
+        <h1 className="hero__title">AZURE DRAGONS</h1>
         <p className="hero__subtitle">Honor · Disciplina · Mejora constante · 精益求精</p>
         <p className="hero__tagline">Competimos con propósito y respeto.</p>
         <div className="hero__actions">

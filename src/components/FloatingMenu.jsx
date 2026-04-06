@@ -39,7 +39,7 @@ export default function FloatingMenu() {
 
             <div className="menu-social" aria-label="Redes sociales">
               <a
-                href="https://x.com/Fnactic_de_Temu"
+                href="https://x.com/Azure_Dragons"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
@@ -50,7 +50,7 @@ export default function FloatingMenu() {
                 </svg>
               </a>
               <a
-                href="https://instagram.com/fnaticodetemu"
+                href="https://instagram.com/azuredragons"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -61,7 +61,7 @@ export default function FloatingMenu() {
                 </svg>
               </a>
               <a
-                href="https://youtube.com/@fnaticdetemu"
+                href="https://youtube.com/@azuredragons"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
@@ -72,7 +72,7 @@ export default function FloatingMenu() {
                 </svg>
               </a>
               <a
-                href="https://www.tiktok.com/@fnatic_temu"
+                href="https://www.tiktok.com/@azure_dragons"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok"

@@ -1,25 +1,27 @@
 import './TeamSection.css'
 import PlayerCard from './PlayerCard'
+import fabuPhoto from '../assets/player_photo/fabu.png'
+import annPhoto from '../assets/player_photo/ann.png'
 
 const teams = [
   {
-    name: 'Fnatic de Temu',
+    name: 'Azure Dragons',
     players: [
-      { role: 'Top', name: 'Jugador Top', photo: '' },
-      { role: 'Jungla', name: 'Jugador Jungla', photo: '' },
-      { role: 'Mid', name: 'Jugador Mid', photo: '' },
-      { role: 'ADC', name: 'Jugador ADC', photo: '' },
-      { role: 'Support', name: 'Jugador Support', photo: '' },
+      { role: 'Top', name: 'Ann', photo: annPhoto },
+      { role: 'Jungla', name: 'Cachi', photo: '' },
+      { role: 'Mid', name: 'Suzer', photo: '' },
+      { role: 'ADC', name: 'Pikaru', photo: '' },
+      { role: 'Support', name: 'Lukas', photo: '' },
     ],
   },
   {
-    name: 'FNT T1 Academy',
+    name: 'Azure Dragons Academy',
     players: [
-      { role: 'Top', name: 'Jugador Top', photo: '' },
-      { role: 'Jungla', name: 'Jugador Jungla', photo: '' },
-      { role: 'Mid', name: 'Jugador Mid', photo: '' },
-      { role: 'ADC', name: 'Jugador ADC', photo: '' },
-      { role: 'Support', name: 'Jugador Support', photo: '' },
+      { role: 'Top', name: 'Claudi', photo: '' },
+      { role: 'Jungla', name: 'Fabu', photo: fabuPhoto },
+      { role: 'Mid', name: '', photo: '' },
+      { role: 'ADC', name: '', photo: '' },
+      { role: 'Support', name: '', photo: '' },
     ],
   },
 ]

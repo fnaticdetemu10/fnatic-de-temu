@@ -11,7 +11,7 @@ export default function Community() {
             <div className="community__cardBody">
               <h3 id="community-discord-title" className="community__cardTitle">¿Quieres ser parte de la comunidad?</h3>
               <p className="community__cardText">
-                Únete a nuestro Discord para conversar, participar en eventos, hacer watchparties y formar parte de <strong className='emphasis'>Fnatic de Temu</strong>.
+                Únete a nuestro Discord para conversar, participar en eventos, hacer watchparties y formar parte de <strong className='emphasis'>Azure Dragons</strong>.
               </p>
               <div className="community__actions">
                 <a
@@ -39,7 +39,7 @@ export default function Community() {
                   href="https://forms.gle/ZpktiatxRkKhNJK86" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  aria-label="Abrir formulario para competir con Fnatic de Temu"
+                  aria-label="Abrir formulario para competir con Azure Dragons"
                 >
                   Aplicar para competir
                 </a>

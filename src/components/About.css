@@ -6,13 +6,7 @@
 
 .about {
   width: 100%;
-  color: var(--color-text-primary);
-  background:
-    linear-gradient(
-      180deg,
-      #fcd9b6 0%,
-      #fff7ef 100%
-    );
+  color: #eaeaea;
   padding: 1.5rem 0;
 }
 
@@ -31,6 +25,7 @@
   font-weight: 600;
   letter-spacing: -0.01em;
   margin-bottom: 0.75rem;
+  color: #fff;
 }
 
 .about__intro {
@@ -39,7 +34,7 @@
   opacity: 0.85;
   text-wrap: balance;
   max-width: 72ch;
-  color: var(--color-text-secondary);
+  color: #dfdfdf;
 }
 
 .about__sectionTitle {
@@ -47,6 +42,7 @@
   font-weight: 600;
   margin: 2.5rem 0 0.75rem;
   letter-spacing: -0.005em;
+  color: var(--color-accent);
 }
 
 .about__mission {

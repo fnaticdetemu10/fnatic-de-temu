@@ -5,9 +5,7 @@
 
 .community {
   width: 100%;
-  color: var(--color-text-primary);
-  background:
-    linear-gradient(180deg, #fcd9b6 0%, #fff7ef 100%);
+  color: #eaeaea;
 }
 
 .community__container {
@@ -20,6 +18,7 @@
   font-size: clamp(1.75rem, 5vw, 2.4rem);
   line-height: 1.2;
   margin: 0 0 1.25rem 0;
+  color: #fff;
 }
 
 .community__grid {
@@ -29,10 +28,10 @@
 }
 
 .community__card {
-  background: #fff;
+  background: #0d1117;
   border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255,255,255,0.06);
   overflow: hidden;
 }
 
@@ -44,6 +43,7 @@
   font-size: clamp(1.25rem, 3.2vw, 1.6rem);
   font-weight: 600;
   margin: 0 0 0.5rem 0;
+  color: var(--color-accent);
 }
 
 .community__cardText {

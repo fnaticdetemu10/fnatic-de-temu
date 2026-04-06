@@ -1,12 +1,6 @@
 .creators {
   width: 100%;
-  color: var(--color-text-primary);
-  background:
-    linear-gradient(
-      180deg,
-      #fff7ef 0%,
-      #fcd9b6 100% 
-    );
+  color: #eaeaea;
 }
 
 .creators__container {
@@ -19,6 +13,7 @@
   font-size: clamp(1.75rem, 5.5vw, 2.5rem);
   line-height: 1.2;
   margin: 0 0 1rem 0;
+  color: #fff;
 }
 
 .creators__player {

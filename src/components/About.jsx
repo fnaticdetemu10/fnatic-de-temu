@@ -40,7 +40,7 @@ export default function About() {
         <header className="about__header">
           <h2 className="about__title">¿Quiénes somos?</h2>
           <p className="about__intro">
-            Somos <strong className="emphasis">Fnatic de Temu</strong>, un club de esports enfocado en <strong className="emphasis">League of Legends</strong>. En Fnatic de Temu no solo jugamos; construimos relaciones y crecemos juntos, impulsados por la pasión y el respeto.
+            Somos <strong className="emphasis">Azure Dragons</strong>, un club de esports enfocado en <strong className="emphasis">League of Legends</strong>. En Azure Dragons no solo jugamos; construimos relaciones y crecemos juntos, impulsados por la pasión y el respeto.
           </p>
         </header>
 

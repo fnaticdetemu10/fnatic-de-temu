@@ -20,7 +20,7 @@ const FORMAT_DURATION_HOURS: Record<Match['format'], number> = {
   BO5: 5
 }
 
-const teamLogoUrl = new URL('../assets/logos/FNATIC DE TEMU.jpg', import.meta.url).href
+const teamLogoUrl = new URL('../assets/logos/New_Logo.png', import.meta.url).href
 
 function formatCountdown(ms: number) {
   const totalSeconds = Math.floor(ms / 1000)
